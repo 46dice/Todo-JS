@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo">
+            <div class="todo__high flex">
+                <h2 class="todo__title">HIGH</h2>
+                <form data-form-high class="todo__high-form todo__form">
+                    <input data-input-high class="todo__form-input" placeholder="Добавить важное дело" type="text"
+                        id="task" name="task" required>
+                    <button class="todo__form-btn btn" type="submit">+</button>
+                </form>
+                <ul data-list-high id="todo__list--high" class="todo__high-list todo__list flex ">
+                    <li class="todo__list-item todo__item">
+                        <label class="custom-checkbox">
+                            <input checked type="checkbox" id="toggle" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Placeat voluptate quis distinctio, magnam laboriosam voluptatibus
+                                quae ipsum a mollitia? Nemo ratione possimus assumenda inventore facilis voluptatem
+                                nam nisi et. Modi.</span>
+                        </label>
+                        <button class="todo__item-btn btn">✕</button>
+                    </li>
+                    <li class="todo__list-item todo__item">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" id="toggle" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Сверстать ToDo</span>
+                        </label>
+                        <button class="todo__item-btn btn">✕</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="todo__low flex">
+                <h2 class="todo__title">LOW</h2>
+                <form data-form-low class="todo__low-form todo__form">
+                    <input data-input-low class="todo__form-input" placeholder="Добавить неважное дело" type="text"
+                        id="task" name="task" required>
+                    <button class="todo__form-btn btn" type="submit">+</button>
+                </form>
+                <ul data-list-low id="todo__list--low" class="todo__low-list todo__list flex">
+                    <li class="todo__list-item todo__item">
+                        <label class="custom-checkbox">
+                            <input checked type="checkbox" id="toggle" class="custom-checkbox__field">
+                            <span class="custom-checkbox__content">Неважное дело</span>
+                        </label>
+                        <button class="todo__item-btn btn">✕</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+@import 'checkboxstyle.scss';
+@import 'breakpoint.scss';
+
+body {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    @include small-tablet {
+        font-size: 15px;
+    }
+}
+
+.container {
+    max-width: 1280px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #d2cfcf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include small-tablet {
+        align-items: normal;
+        padding: 30px 15px 30px;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.active {
+    background-color: #f49d9d;
+}
+
+.btn {
+    border-radius: 50%;
+    z-index: 100;
+
+    &:active {
+        color: red;
+    }
+}
+
+.todo {
+    max-width: 480px;
+    min-width: 480px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+
+    @include small-tablet {
+        padding: 30px 30px 0px 30px;
+        min-width: 320px;
+        width: 340px;
+        height: 600px;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__list {
+        flex-direction: column;
+        gap: 8px;
+
+        @include small-tablet {
+            max-height: 180px;
+            padding-right: 20px;
+            overflow: auto;
+        }
+    }
+
+    &__form {
+        border: 2px solid #d2cfcf;
+        border-radius: 5px;
+        position: relative;
+
+        & input {
+            padding-left: 12px;
+            padding-bottom: 12px;
+            padding-top: 12px;
+            width: 100%;
+        }
+
+        &-btn {
+            padding: 10px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+            border-radius: 50%;
+
+            &:hover {
+                transform: scale(2) translateY(-25%);
+            }
+        }
+    }
+}
+
+.todo__high {
+    gap: 8px;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.todo__low {
+    gap: 8px;
+    flex-direction: column;
+}
+
+.todo__item {
+    position: relative;
+    border: 1px solid #202020;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &-btn {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        font-size: 10px;
+        padding: 5px;
+        transition: transform 0.3s ease;
+        z-index: 1000;
+
+        &:hover {
+            transform: scale(2);
+        }
+    }
+
+    &:hover {
+        background-color: #f0e2e2;
+    }
+}
+
+.task-status {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+    color: #cbc1c1;
+}
+
+.custom-checkbox__content {
+    color: #202020;
+}
