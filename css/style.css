@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .custom-checkbox {
   cursor: pointer;
   z-index: 2;
@@ -169,14 +170,15 @@ body {
   border-radius: 50%;
 }
 .todo__form-btn:hover {
-  -webkit-transform: scale(2) translateY(-25%);
-      -ms-transform: scale(2) translateY(-25%);
-          transform: scale(2) translateY(-25%);
+  -webkit-transform: scale(1.5) translateY(-30%);
+      -ms-transform: scale(1.5) translateY(-30%);
+          transform: scale(1.5) translateY(-30%);
 }
 @media (max-width: 768px) {
   .todo__form-btn {
     padding-right: 20px;
     font-size: 20px;
+    content: "Добавить";
   }
 }
 

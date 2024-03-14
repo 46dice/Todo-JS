@@ -100,12 +100,13 @@ body {
             border-radius: 50%;
 
             &:hover {
-                transform: scale(2) translateY(-25%);
+                transform: scale(1.5) translateY(-30%);
             }
 
             @include small-tablet {
                 padding-right: 20px;
                 font-size: 20px;
+                content: "Добавить";
             }
         }
     }
