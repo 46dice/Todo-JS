@@ -98,9 +98,6 @@ body {
   background-color: #f49d9d;
 }
 
-.btn {
-  border-radius: 50%;
-}
 .btn:active {
   color: red;
 }
