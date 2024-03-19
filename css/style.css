@@ -172,6 +172,9 @@ input {
   display: block;
   height: 100%;
   z-index: 100;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .todo__form-btn span {
   display: block;
