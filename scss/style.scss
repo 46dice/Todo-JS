@@ -37,11 +37,12 @@ body {
 
 .btn {
     border-radius: 50%;
+
     &:active {
         color: red;
     }
 }
- 
+
 .todo {
     max-width: 480px;
     min-width: 480px;
@@ -96,8 +97,10 @@ body {
             right: 0;
             transition: transform 0.3s ease;
             border-radius: 50%;
-            
-            
+            display: block;
+            height: 100%;
+            z-index: 100;
+
             &:hover {
                 transform: scale(1.1) translateY(-45%);
             }
