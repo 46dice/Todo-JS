@@ -98,6 +98,10 @@ body {
             height: 100%;
             z-index: 100;
 
+            & p {
+                display: block;
+            }
+
             &:hover {
                 transform: scale(1.1) translateY(-45%);
             }
@@ -157,3 +161,7 @@ body {
 .custom-checkbox__content {
     color: #202020;
 }
+
+input:read-only{
+    background-color: #eb8e8e;
+    }

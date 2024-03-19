@@ -166,6 +166,9 @@ body {
   height: 100%;
   z-index: 100;
 }
+.todo__form-btn p {
+  display: block;
+}
 .todo__form-btn:hover {
   -webkit-transform: scale(1.1) translateY(-45%);
       -ms-transform: scale(1.1) translateY(-45%);
@@ -233,4 +236,12 @@ body {
 
 .custom-checkbox__content {
   color: #202020;
+}
+
+input:-moz-read-only {
+  background-color: #eb8e8e;
+}
+
+input:read-only {
+  background-color: #eb8e8e;
 }
