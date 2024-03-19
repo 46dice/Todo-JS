@@ -145,14 +145,14 @@ input {
   border-radius: 5px;
   position: relative;
 }
-.todo__form input {
+.todo__form-input {
   padding-left: 12px;
   padding-bottom: 12px;
   padding-top: 12px;
   width: 100%;
 }
 @media (max-width: 768px) {
-  .todo__form input {
+  .todo__form-input {
     padding-right: 50px;
   }
 }
@@ -169,12 +169,16 @@ input {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  display: block;
+  display: inline-block;
   height: 100%;
   z-index: 100;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  cursor: pointer;
+  border-radius: 10%;
+  color: #9e9a9a;
+  background-color: #f0e2e2;
 }
 .todo__form-btn span {
   display: block;
@@ -246,12 +250,4 @@ input {
 
 .custom-checkbox__content {
   color: #202020;
-}
-
-input:-moz-read-only {
-  background-color: #eb8e8e;
-}
-
-input:read-only {
-  background-color: #eb8e8e;
 }

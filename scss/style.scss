@@ -82,7 +82,7 @@ input {
         border-radius: 5px;
         position: relative;
 
-        & input {
+        &-input {
             padding-left: 12px;
             padding-bottom: 12px;
             padding-top: 12px;
@@ -101,10 +101,17 @@ input {
             transform: translateY(-50%);
             right: 0;
             transition: transform 0.3s ease;
-            display: block;
+            display: inline-block;
             height: 100%;
             z-index: 100;
-            -webkit-appearance: none; -moz-appearance: none; appearance: none; 
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            cursor: pointer;
+            border-radius: 10%;
+            color: #9e9a9a;
+            background-color: #f0e2e2;
+            
             & span {
                 display: block;
             }
@@ -167,8 +174,4 @@ input {
 
 .custom-checkbox__content {
     color: #202020;
-}
-
-input:read-only {
-    background-color: #eb8e8e;
 }
