@@ -267,3 +267,7 @@ body {
 .custom-checkbox__content {
     color: #202020
 }
+
+.todo__form-btn {
+    -webkit-appearance: none;
+}

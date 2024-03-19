@@ -98,7 +98,8 @@ body {
             right: 0;
             transition: transform 0.3s ease;
             border-radius: 50%;
-
+            
+            
             &:hover {
                 transform: scale(1.1) translateY(-45%);
             }
@@ -107,7 +108,7 @@ body {
                 padding-right: 20px;
                 font-size: 10px;
                 content: "Добавить";
-                 
+
             }
         }
     }
