@@ -63,6 +63,12 @@ body {
   }
 }
 
+button,
+input {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   max-width: 1280px;
   height: 100vh;
@@ -151,6 +157,7 @@ body {
   }
 }
 .todo__form-btn {
+  margin: 0;
   padding: 10px;
   position: absolute;
   top: 50%;
@@ -166,7 +173,7 @@ body {
   height: 100%;
   z-index: 100;
 }
-.todo__form-btn p {
+.todo__form-btn span {
   display: block;
 }
 .todo__form-btn:hover {
