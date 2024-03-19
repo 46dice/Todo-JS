@@ -88,9 +88,7 @@ input {
             padding-top: 12px;
             width: 100%;
 
-            @include small-tablet {
-                padding-right: 50px;
-            }
+            @include small-tablet {}
         }
 
         &-btn {
@@ -108,10 +106,13 @@ input {
             -moz-appearance: none;
             appearance: none;
             cursor: pointer;
-            border-radius: 10%;
-            color: #9e9a9a;
+            color: #0a0a0a;
             background-color: #f0e2e2;
-            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: none;
+
             & span {
                 display: block;
             }
@@ -121,7 +122,6 @@ input {
             }
 
             @include small-tablet {
-                padding-right: 20px;
                 font-size: 10px;
             }
         }
