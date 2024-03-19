@@ -1,1 +1,259 @@
-.custom-checkbox{cursor:pointer;z-index:2}.custom-checkbox input[type=checkbox]{position:absolute;width:1px;height:1px;opacity:0}.custom-checkbox span{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-left:30px;-ms-flex-wrap:wrap;flex-wrap:wrap;overflow-wrap:anywhere;padding:12px;padding-left:30px}.custom-checkbox span::before{content:"";position:absolute;left:3px;top:10px;width:21px;height:21px;border:1px solid #f30303;display:inline-block;margin-right:10px;border-radius:50%}.custom-checkbox span::after{content:"";position:absolute;left:3.5px;top:10.8px;width:20px;height:20px;background-color:#ed6c6c;border-radius:50%;opacity:0}.custom-checkbox input[type=checkbox]:checked+span::after{opacity:1}body{font-size:18px;font-family:"Roboto",sans-serif;font-weight:400;font-style:normal}@media(max-width: 768px){body{font-size:15px}}.container{max-width:1280px;height:100vh;margin:0 auto;background-color:#d2cfcf;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}@media(max-width: 768px){.container{-webkit-box-align:normal;-ms-flex-align:normal;align-items:normal;padding:30px 15px 30px}}.flex{display:-webkit-box;display:-ms-flexbox;display:flex}.active{background-color:#f49d9d}.btn{border-radius:50%;z-index:100}.btn:active{color:red}.todo{max-width:480px;min-width:480px;margin:0 auto;padding:15px;background-color:#fff;border-radius:10px}@media(max-width: 768px){.todo{padding:30px 30px 0px 30px;min-width:320px;width:100%;height:600px}}.todo__title{text-align:center}.todo__list{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:8px}@media(max-width: 768px){.todo__list{max-height:180px;padding-right:20px;overflow:auto}}.todo__form{border:2px solid #d2cfcf;border-radius:5px;position:relative}.todo__form input{padding-left:12px;padding-bottom:12px;padding-top:12px;width:100%}@media(max-width: 768px){.todo__form input{padding-right:50px}}.todo__form-btn{padding:10px;position:absolute;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);right:0;-webkit-transition:-webkit-transform .3s ease;transition:-webkit-transform .3s ease;transition:transform .3s ease;transition:transform .3s ease, -webkit-transform .3s ease;border-radius:50%}.todo__form-btn:hover{-webkit-transform:scale(1.1) translateY(-45%);-ms-transform:scale(1.1) translateY(-45%);transform:scale(1.1) translateY(-45%)}@media(max-width: 768px){.todo__form-btn{padding-right:20px;font-size:10px;content:"Добавить"}}.todo__high{gap:8px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-bottom:20px}.todo__low{gap:8px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.todo__item{position:relative;border:1px solid #202020;border-radius:5px;-webkit-transition:all .3s ease;transition:all .3s ease;cursor:pointer}.todo__item-btn{position:absolute;top:0;right:5px;font-size:10px;padding:5px;-webkit-transition:-webkit-transform .3s ease;transition:-webkit-transform .3s ease;transition:transform .3s ease;transition:transform .3s ease, -webkit-transform .3s ease;z-index:1000}.todo__item-btn:hover{-webkit-transform:scale(2);-ms-transform:scale(2);transform:scale(2)}.todo__item:hover{background-color:#f0e2e2}.task-status{font-size:10px;margin-top:10px;margin-left:5px;color:#cbc1c1}.custom-checkbox__content{color:#202020}
+.custom-checkbox {
+    cursor: pointer;
+    z-index: 2
+}
+
+.custom-checkbox input[type=checkbox] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0
+}
+
+.custom-checkbox span {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 30px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    overflow-wrap: anywhere;
+    padding: 12px;
+    padding-left: 30px
+}
+
+.custom-checkbox span::before {
+    content: "";
+    position: absolute;
+    left: 3px;
+    top: 10px;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #f30303;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%
+}
+
+.custom-checkbox span::after {
+    content: "";
+    position: absolute;
+    left: 3.5px;
+    top: 10.8px;
+    width: 20px;
+    height: 20px;
+    background-color: #ed6c6c;
+    border-radius: 50%;
+    opacity: 0
+}
+
+.custom-checkbox input[type=checkbox]:checked+span::after {
+    opacity: 1
+}
+
+body {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+@media(max-width: 768px) {
+    body {
+        font-size: 15px
+    }
+}
+
+.container {
+    max-width: 1280px;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #d2cfcf;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+@media(max-width: 768px) {
+    .container {
+        -webkit-box-align: normal;
+        -ms-flex-align: normal;
+        align-items: normal;
+        padding: 30px 15px 30px
+    }
+}
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.active {
+    background-color: #f49d9d
+}
+
+.btn {
+    border-radius: 50%;
+    z-index: 100
+}
+
+.btn:active {
+    color: red
+}
+
+.todo {
+    max-width: 480px;
+    min-width: 480px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px
+}
+
+@media(max-width: 768px) {
+    .todo {
+        padding: 30px 30px 0px 30px;
+        min-width: 320px;
+        width: 100%;
+        height: 600px
+    }
+}
+
+.todo__title {
+    text-align: center
+}
+
+.todo__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px
+}
+
+@media(max-width: 768px) {
+    .todo__list {
+        max-height: 180px;
+        padding-right: 20px;
+        overflow: auto
+    }
+}
+
+.todo__form {
+    border: 2px solid #d2cfcf;
+    border-radius: 5px;
+    position: relative
+}
+
+.todo__form input {
+    padding-left: 12px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    width: 100%
+}
+
+@media(max-width: 768px) {
+    .todo__form input {
+        padding-right: 50px
+    }
+}
+
+.todo__form-btn {
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+    border-radius: 50%
+}
+
+.todo__form-btn:hover {
+    -webkit-transform: scale(1.1) translateY(-45%);
+    -ms-transform: scale(1.1) translateY(-45%);
+    transform: scale(1.1) translateY(-45%)
+}
+
+@media(max-width: 768px) {
+    .todo__form-btn {
+        padding-right: 20px;
+        font-size: 10px;
+        content: "Добавить"
+    }
+}
+
+.todo__high {
+    gap: 8px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 20px
+}
+
+.todo__low {
+    gap: 8px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.todo__item {
+    position: relative;
+    border: 1px solid #202020;
+    border-radius: 5px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    cursor: pointer
+}
+
+.todo__item-btn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 10px;
+    padding: 5px;
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+    z-index: 1000
+}
+
+.todo__item-btn:hover {
+    -webkit-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2)
+}
+
+.todo__item:hover {
+    background-color: #f0e2e2
+}
+
+.task-status {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+    color: #cbc1c1
+}
+
+.custom-checkbox__content {
+    color: #202020
+}
