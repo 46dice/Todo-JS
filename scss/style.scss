@@ -94,7 +94,6 @@ body {
             transform: translateY(-50%);
             right: 0;
             transition: transform 0.3s ease;
-            border-radius: 50%;
             display: block;
             height: 100%;
             z-index: 100;
@@ -106,8 +105,6 @@ body {
             @include small-tablet {
                 padding-right: 20px;
                 font-size: 10px;
-                content: "Добавить";
-
             }
         }
     }
