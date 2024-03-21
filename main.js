@@ -58,9 +58,8 @@ function deleteTask(list, data, priority) {
 
 function changeStatusAndRender(list, data, priority) {
     const target = event.target.closest('li');
-    const targetForChecked = event.target.previousElementSibling; //костыль? другого способа я что-то не нашёл, чтобы найти чекбокс
 
-    if (target.hasAttribute('data-status') && targetForChecked) {
+    if (target.hasAttribute('data-status')) {
         target.classList.toggle('active');
         const elemId = Number(target.getAttribute('id'));
         const findElemId = data[priority].findIndex(elem => elem.id === elemId);
@@ -68,10 +67,8 @@ function changeStatusAndRender(list, data, priority) {
 
         if (checkStatus) {
             data[priority][findElemId].status = STATUS.IN_PROGRESS;
-            targetForChecked.checked = true;
         } else {
             data[priority][findElemId].status = STATUS.DONE;
-            targetForChecked.checked = false;
         }
         renderHistory(list, data, priority);
     }
@@ -107,7 +104,7 @@ function renderHistory(list, data, priority) {
             if (checkLabelForStatusDone) {
                 elem.checked = true; //подсвечивает чекбоксы
             } else {
-                elem.checked = false; 
+                elem.checked = false;
             }
         });
 

@@ -89,7 +89,7 @@ input {
     -webkit-box-align: normal;
         -ms-flex-align: normal;
             align-items: normal;
-    padding: 30px 15px 30px;
+    padding: 40px 15px 30px;
   }
 }
 
@@ -114,6 +114,18 @@ input {
   padding: 15px;
   background-color: #fff;
   border-radius: 10px;
+  position: relative;
+}
+.todo__name {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  font-size: 28px;
+  background: linear-gradient(45deg, #49201d 33%, #fa5826 66%, #f34703);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0c0c0c;
+  display: table;
 }
 @media (max-width: 768px) {
   .todo {
